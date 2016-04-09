@@ -1,18 +1,14 @@
 import React, { PropTypes } from 'react'
 
 const Form = ({ handler }) => {
-  let input
-  const ref = node => { input = node }
-
   const onSubmit = e => {
     e.preventDefault()
-    handler(input.value)
-    input.value = ''
+    handler()
   }
 
   return (
     <form onSubmit={onSubmit} >
-      <input ref={ref} />
+      <input />
       <button type="submit">Submit</button>
     </form>
   )

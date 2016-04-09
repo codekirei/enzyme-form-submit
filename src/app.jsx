@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom'
 
 const rootEl = document.getElementById('root')
 
-const handler = text => alert(text)
+const handler = text => alert('handler called!')
 
 const render = () => {
   const Form = require('./form.jsx').default
