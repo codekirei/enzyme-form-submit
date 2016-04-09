@@ -1,0 +1,4 @@
+--require babel-register
+--require test/utils/jsdom
+--ui exports
+--recursive test/**/*.spec.js?(x)
