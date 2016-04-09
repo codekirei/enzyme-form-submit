@@ -12,15 +12,15 @@ const render = () => {
   return { spy, form, button }
 }
 
-exports['<Root />'] = {
+exports['<Form />'] = {
 
-  "handles submit with `form.simulate('submit')`": () => {
+  'handles submit with submit event on form': () => {
     const { spy, form } = render()
     form.simulate('submit')
     expect(spy.called).to.equal(true)
   },
 
-  "handles submit with `button.simulate('click')`": () => {
+  'handles submit with click event on button': () => {
     const { spy, button } = render()
     button.simulate('click')
     expect(spy.called).to.equal(true)
